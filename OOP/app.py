@@ -78,30 +78,72 @@
 
 #INHERITANCE
 
-class Animal:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# class Animal:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
-    def show(self):
-        print(f"I am {self.name} and I am {self.age} years old")
+#     def show(self):
+#         print(f"I am {self.name} and I am {self.age} years old")
 
-class Dog(Animal):
-    def speak(self):
-        print("Bark")
+# class Dog(Animal):
+#     def speak(self):
+#         print("Bark")
 
-class Cat(Animal):
+# class Cat(Animal):
 
-    def __init__(self, name, age, color):
-        super().__init__(name, age)
-        self.color = color
-
-
-    def speak(self):
-        print("Meow")
-
-a = Dog("Charlie", 1)
-a.show()
-a.speak()
+#     def __init__(self, name, age, color):
+#         super().__init__(name, age)
+#         self.color = color
 
 
+#     def speak(self):
+#         print("Meow")
+
+# a = Dog("Charlie", 1)
+# a.show()
+# a.speak()
+
+
+
+# CLASS ATTRIBUTES
+
+# class Person:
+#     number_of_people = 0
+#     GRAVITY = -9.8
+
+#     def __init__(self, name):
+#         self.name = name
+#         Person.add_people()
+
+#     @classmethod
+#     def number_of_people_(cls):
+#         return cls.number_of_people
+
+#     @classmethod
+#     def add_people(cls):
+#         cls.number_of_people += 1
+
+# p1 = Person("Jill")
+
+# p2 = Person("Tim")
+
+# print(Person.number_of_people_())
+
+
+
+
+
+# STATIC FUNCTIONS
+
+class Math:
+
+    @staticmethod
+    def add5(x):
+        return x + 5
+
+    @staticmethod
+    def add10(x):
+        return x + 10
+
+print(Math.add5(5))
